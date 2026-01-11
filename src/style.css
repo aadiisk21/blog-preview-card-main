@@ -9,9 +9,9 @@
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -23,39 +23,109 @@ body {
   align-items: center;
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
-  /* background-color: var(--color-yellow); */
-  background: black;
+  background-color: var(--color-yellow);
   color: var(--color-dark-gray);
-  /* border: 1px solid red; */
 }
 
 .container {
-  width: 100;
+  width: 384px;
+  min-width: 327px;
   height: auto;
-  /* border: 1px solid blue; */
+  min-height: 501px;
 }
 
 .card {
-  width: 384px;
+  width: auto;
   height: 522px;
-  /* width: 100%;
-  height: auto; 
-  max-width: 384px;
-  min-width: 327px;
-  max-height: 522px;
-  min-height: 501px; */
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-flow: column;
   border: 1px solid var(--color-light-gray);
   background-color: var(--color-white);
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 9px 9px var(--color-dark-gray);
 }
 
-.card-media,
-.card-content,
+.card:hover {
+  box-shadow: 17px 17px var(--color-dark-gray);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-media {
+  width: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-top: 4px;
+  padding-top: 12px;
+}
+
+.card-media>img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+
+.card-content {
+  width: 336px;
+}
+
+.card-content>h5 {
+  width: auto;
+  margin-top: 15px;
+  padding: 6px 11px;
+  display: inline-block;
+  color: var(--color-dark-gray);
+  background-color: var(--color-yellow);
+  font-weight: var(--font-weight-bold);
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.card-content>p:nth-child(2) {
+  margin: 6px 0px;
+  padding: 6px 0px;
+  font-size: 14px;
+}
+
+.card-content>h1 {
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  margin: 2px 0px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+
+.card-content>p:nth-child(4) {
+  color: var(--color-light-gray);
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  line-height: 150%;
+  font-size: 16px;
+  margin: 6px 0px;
+}
+
 .card-footer {
-  border: 1px solid purple;
+  width: 88%;
+  margin-bottom: 16px;
+}
+
+.card-footer .profile-photo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-photo>img {
+  width: 32px;
+  height: auto;
+}
+
+.profile-photo>h5 {
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
 }
