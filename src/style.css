@@ -53,6 +53,11 @@ body {
   transition: box-shadow 0.3s ease-in-out;
 }
 
+.card:hover .card-content> h1 {
+  color: var(--color-yellow);
+  transition: color 0.3s ease-in-out;
+}
+
 .card-media {
   width: auto;
   overflow: hidden;
