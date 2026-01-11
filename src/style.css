@@ -36,14 +36,14 @@ body {
 }
 
 .card {
-  /* width: 384px;
-  height: 522px; */
-  width: 100%;
+  width: 384px;
+  height: 522px;
+  /* width: 100%;
   height: auto; 
   max-width: 384px;
   min-width: 327px;
   max-height: 522px;
-  min-height: 501px;
+  min-height: 501px; */
   display: flex;
   justify-content: center;
   align-items: center;
