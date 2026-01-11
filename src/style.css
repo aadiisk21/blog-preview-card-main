@@ -1,0 +1,61 @@
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(0, 0%, 42%);
+  --color-dark-gray: hsl(0, 0%, 7%);
+  --font-family: 'Figtree', 'Inter', sans-serif;
+  --font-weight-normal: 500;
+  --font-weight-bold: 800;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-normal);
+  /* background-color: var(--color-yellow); */
+  background: black;
+  color: var(--color-dark-gray);
+  /* border: 1px solid red; */
+}
+
+.container {
+  width: 100;
+  height: auto;
+  /* border: 1px solid blue; */
+}
+
+.card {
+  /* width: 384px;
+  height: 522px; */
+  width: 100%;
+  height: auto; 
+  max-width: 384px;
+  min-width: 327px;
+  max-height: 522px;
+  min-height: 501px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  border: 1px solid var(--color-light-gray);
+  background-color: var(--color-white);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-media,
+.card-content,
+.card-footer {
+  border: 1px solid purple;
+}
